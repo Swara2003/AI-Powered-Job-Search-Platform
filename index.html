@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Job Search</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>🔍 AI-Powered Job Search</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Jobs</a>
+      <a href="#">Profile</a>
+      <button id="logoutBtn">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome-section">
+      <h2 id="welcomeMessage"></h2>
+    </section>
+
+    <section class="filter-section">
+      <input type="text" id="searchInput" placeholder="Search job title..." />
+      <select id="locationFilter">
+        <option value="">All Locations</option>
+        <option value="Remote">Remote</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bangalore">Bangalore</option>
+      </select>
+    </section>
+
+    <section id="job-suggestions">
+      <h2>💼 Suggested Jobs for You</h2>
+      <div id="job-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AI Job Search. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
